@@ -1,23 +1,32 @@
 import logo from './logo.svg';
+import Home from './Home';
 import './App.css';
 
 function App() {
   return (
+    
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav>
+          <input type="checkbox" id='check'></input>
+          <label for="check" class='checkbtn'>
+            <i class='fas fa-bars'></i>
+          </label>
+          <label class="logo">RISETech</label>
+          <ul>
+            <li><a class="active" href='#'>Home</a></li>
+            <li><a class="active" href='#'>Services</a></li>
+            <li><a class="active" href='#'>Product</a></li>
+            <li><a  class="active" href='#'>Career</a></li>
+            <li><a class="active" href='#'>Contact</a></li>
+            <li><a class="active" href='#'>Feedback</a></li>
+          </ul>
+        </nav>
+        <section>
+
+        </section>
       </header>
+      
     </div>
   );
 }
